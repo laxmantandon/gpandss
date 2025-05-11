@@ -147,6 +147,15 @@ app_license = "MIT"
 #	],
 # }
 
+scheduler_events = {
+    "cron": {
+        "*/5 * * * *": [
+            "gpandss.attendance.process_attendance_log"
+        ]
+	}
+}
+
+
 # Testing
 # -------
 
